@@ -30,7 +30,7 @@ async function someProcedure(n: number[]): Promise<IUser[] | Error> {
   const usersArr: IUser[] = []
   for (let i = 1; i <= n.length; i++) {
     try {
-      const response = await fetch(`${baseUrl}susers/${i}`)
+      const response = await fetch(`${baseUrl}users/${i}`)
       if (response.status >= 400) {
         return new Error('Bad status:' + response.status)
       }
