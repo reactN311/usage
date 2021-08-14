@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/system": "^4.12.1",
+    "@types/material-ui": "^0.21.9",
+    "@types/node-fetch": "^2.5.12",
+    "@types/redux-logger": "^3.0.9",
+    "@types/redux-persist": "^4.3.1",
+    "material-ui": "^0.20.2",
+    "node-fetch": "^2.6.1",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0"
+  }
+}
