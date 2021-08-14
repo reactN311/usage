@@ -1,34 +1,5 @@
 import fetch from 'node-fetch'
 
-// class Thenable {
-//   constructor(num: number) {
-//     this.num = num
-//   }
-//   then(resolve, reject) {
-//     // console.log(resolve)
-//     // resolve with this.num*2 after 1000ms
-//     setTimeout(() => resolve(this.num * 2), 1000) // (*)
-//   }
-// }
-
-// async function f() {
-//   // waits for 1 second, then result becomes 2
-//   let result = await new Thenable(1)
-//   console.log(result)
-// }
-
-// f()
-///////////////
-// class Waiter {
-//   async wait() {
-//     return await Promise.resolve(1)
-//   }
-// }
-
-// new Waiter().wait().then(console.log) // 1 (this is the same as (result => alert(result)))
-
-////////////////////////
-
 interface IUser {
   id: number
   name: string
