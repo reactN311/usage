@@ -8,11 +8,13 @@ function* generateSequence(start: number, end: number) {
 
 let generator = generateSequence(1, 5)
 
-Promise.all(generator).then((r) => {
-  r.forEach((user) => {
-    console.log(user.data.username)
+Promise.all(generator)
+  .then((r) => {
+    r.forEach((user) => {
+      console.log(user.data.username)
+    })
   })
-})
+  .catch((e) => console.log(e))
 // print results
 // Bret
 // Antonette

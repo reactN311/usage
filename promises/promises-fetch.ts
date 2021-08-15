@@ -26,7 +26,7 @@ const baseUrl = 'https://jsonplaceholder.typicode.com/'
 const usersIdArr: number[] = [1, 2, 3, 4, 5]
 
 /////////////
-async function someProcedure(n: number[]): Promise<IUser[] | Error> {
+async function fetchArr(n: number[]): Promise<IUser[] | Error> {
   const usersArr: IUser[] = []
   for (let i = 1; i <= n.length; i++) {
     try {
@@ -43,7 +43,7 @@ async function someProcedure(n: number[]): Promise<IUser[] | Error> {
   return usersArr
 }
 
-someProcedure(usersIdArr)
+fetchArr(usersIdArr)
   .then((r) => console.log(r))
   .catch(console.error)
 
